@@ -117,14 +117,14 @@ html, body {
     grid-template-columns: 3fr 1fr;
     align-items: center;
     text-align: left;
-    margin: 0px 70px 0px 50px;
+    margin: 0px 70px 30px 50px;
     align-content: center;
 }
 
 .account-bottom {
     display: grid;
     grid-template-columns: 0.5fr 6fr;
-    gap: 30px;
+    gap: 20px;
 }
 
 .greeting {
@@ -197,6 +197,8 @@ html, body {
 }
 
 .left-grid-card {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
     background-color: white;
     border-radius: 10px;
     padding: 30px;
@@ -214,6 +216,20 @@ html, body {
 
 .left-grid-card p {
     color: rgb(82, 82, 82);
+}
+
+.card-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-icon-svg {
+    width: 2em;
+    height: 2em;
+    flex-shrink: 0;
+    fill: currentColor; 
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
 .right-grid-card {
@@ -245,4 +261,39 @@ html, body {
     border: none;
     border-bottom: 1px solid rgb(194, 194, 194);
     margin: 20px 0;
+}
+
+.trending-card-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.trending-card {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.user-info h3 {
+    font-weight: 400;
+}
+
+.username {
+    color: rgb(82, 82, 82);
+    font-weight: 100;
+}
+
+.trending-card img {
+    width: 4em;
+    height: 4em;
+    object-fit: cover;
+    border-radius: 50%;
 }
